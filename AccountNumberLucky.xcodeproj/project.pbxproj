@@ -15,6 +15,7 @@
 		125E7A79233F1DD00092E766 /* AccountNumberLuckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A78233F1DD00092E766 /* AccountNumberLuckyTests.swift */; };
 		125E7A84233F1DD00092E766 /* AccountNumberLuckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */; };
 		125E7A97233F223E0092E766 /* LuckyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */; };
+		12B768DA233F7A9C00D1C781 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberLuckyUITests.swift; sourceTree = "<group>"; };
 		125E7A85233F1DD00092E766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCollectionViewCell.swift; sourceTree = "<group>"; };
+		12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */,
+				12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				125E7A66233F1DCF0092E766 /* ViewController.swift in Sources */,
 				125E7A64233F1DCF0092E766 /* AppDelegate.swift in Sources */,
+				12B768DA233F7A9C00D1C781 /* CollectionViewCell.swift in Sources */,
 				125E7A97233F223E0092E766 /* LuckyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
