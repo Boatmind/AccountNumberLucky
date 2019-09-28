@@ -16,6 +16,7 @@
 		125E7A84233F1DD00092E766 /* AccountNumberLuckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */; };
 		125E7A97233F223E0092E766 /* LuckyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */; };
 		12B768DA233F7A9C00D1C781 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */; };
+		D088E6AC233F803900FA8A68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D088E6AB233F803900FA8A68 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		125E7A85233F1DD00092E766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCollectionViewCell.swift; sourceTree = "<group>"; };
 		12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D088E6AB233F803900FA8A68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				125E7A6A233F1DD00092E766 /* Assets.xcassets */,
 				125E7A6C233F1DD00092E766 /* LaunchScreen.storyboard */,
 				125E7A6F233F1DD00092E766 /* Info.plist */,
+				D088E6AB233F803900FA8A68 /* GoogleService-Info.plist */,
 			);
 			path = AccountNumberLucky;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				125E7A6E233F1DD00092E766 /* LaunchScreen.storyboard in Resources */,
+				D088E6AC233F803900FA8A68 /* GoogleService-Info.plist in Resources */,
 				125E7A6B233F1DD00092E766 /* Assets.xcassets in Resources */,
 				125E7A69233F1DCF0092E766 /* Main.storyboard in Resources */,
 			);
