@@ -15,23 +15,14 @@
 import Foundation
 import Firebase
 
-protocol FirebaseManagerProtocol {
-    func createAccountNumber(account: AccountNumber)
-    func getAccountNumberDict()
-    func getAccountNumber(accNumber: String)
-    func updateAccountNumber(fromAccountNumber: String, toAccount: AccountNumber)
-    func deleteAccountNumber(accountNumber: String)
-}
-
-class FirebaseManager: FirebaseManagerProtocol {
+class FirebaseManager {
     private var ref: DatabaseReference!
     private var list = [AccountNumber]()
     
     private var ACCOUNT_KEY = "AccountNumber"
     private var LUCKY_KEY = "LuckyNumber"
     private var ACCOUNT_AND_LUCKY_KEY = "AccountLuckyNumber"
-
- 
+    
     init() {
         ref = Database.database().reference()
     }
@@ -52,7 +43,7 @@ class FirebaseManager: FirebaseManagerProtocol {
         }
     }
     
-    func getAccountNumberDict() {
+    func getAccountNumberDict(completion: @escaping ([AccountNumber]) -> Void) {
         self.ref.child(ACCOUNT_KEY).observe(DataEventType.value, with: { (snapshot) in
             // TODO: check response
             let response = snapshot.value as? [String : AnyObject] ?? [:]
@@ -64,18 +55,18 @@ class FirebaseManager: FirebaseManagerProtocol {
                 )
                 self.list.append(account)
             }
-            ViewController.getAccountList(list: self.list)
+            completion(self.list)
         }) 
     }
     
-    func getAccountNumber(accNumber: String) {
+    func getAccountNumber(accNumber: String, completion: @escaping (AccountNumber) -> Void) {
         self.ref.child(ACCOUNT_KEY).child(accNumber).observeSingleEvent(of: .value, with: { (snapshot) in
             let response = snapshot.value as? NSDictionary
             let account = AccountNumber(accountNumber: response?.value(forKey: "accountNumber") as! String,
                                         accountType: response?.value(forKey: "accountType") as! String,
                                         firstname: response?.value(forKey: "firstname") as! String,
                                         lastname: response?.value(forKey: "lastname") as! String)
-            ViewController.getAccount(account: account)
+            completion(account)
         }) { (error) in
 //            print(error.localizedDescription)
             print("\(Response.readError.rawValue): \(error).")
