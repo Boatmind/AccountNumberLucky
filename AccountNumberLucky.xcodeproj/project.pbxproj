@@ -18,6 +18,7 @@
 		125E7A6E233F1DD00092E766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E7A6C233F1DD00092E766 /* LaunchScreen.storyboard */; };
 		125E7A79233F1DD00092E766 /* AccountNumberLuckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A78233F1DD00092E766 /* AccountNumberLuckyTests.swift */; };
 		125E7A84233F1DD00092E766 /* AccountNumberLuckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */; };
+		1289B4D82340FF6C0052E3A8 /* Apimanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1289B4D72340FF6C0052E3A8 /* Apimanager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		125E7A7F233F1DD00092E766 /* AccountNumberLuckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountNumberLuckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberLuckyUITests.swift; sourceTree = "<group>"; };
 		125E7A85233F1DD00092E766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1289B4D72340FF6C0052E3A8 /* Apimanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apimanager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		125E7A94233F1E550092E766 /* ApiManager */ = {
 			isa = PBXGroup;
 			children = (
+				1289B4D72340FF6C0052E3A8 /* Apimanager.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				120BBD2D2340BFC3002C0206 /* LuckyTypeNumberViewController.swift in Sources */,
 				125E7A66233F1DCF0092E766 /* ViewController.swift in Sources */,
+				1289B4D82340FF6C0052E3A8 /* Apimanager.swift in Sources */,
 				125E7A64233F1DCF0092E766 /* AppDelegate.swift in Sources */,
 				120BBD302340C1AC002C0206 /* LuckyTypeNumberTableViewCell.swift in Sources */,
 				120BBD332340C578002C0206 /* LuckNumberTyp.swift in Sources */,

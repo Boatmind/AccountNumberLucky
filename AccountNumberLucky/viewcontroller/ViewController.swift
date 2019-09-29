@@ -15,6 +15,12 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    let apiManager = Apimanager()
+    apiManager.getMovie() { [weak self] (result) in
+    
+      print(result)
+    
+    }
     // Do any additional setup after loading the view.
   }
   
