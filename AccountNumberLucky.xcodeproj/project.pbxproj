@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120BBD2D2340BFC3002C0206 /* LuckyTypeNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BBD2C2340BFC3002C0206 /* LuckyTypeNumberViewController.swift */; };
+		120BBD302340C1AC002C0206 /* LuckyTypeNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BBD2E2340C1AC002C0206 /* LuckyTypeNumberTableViewCell.swift */; };
+		120BBD312340C1AC002C0206 /* LuckyTypeNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 120BBD2F2340C1AC002C0206 /* LuckyTypeNumberTableViewCell.xib */; };
+		120BBD332340C578002C0206 /* LuckNumberTyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BBD322340C578002C0206 /* LuckNumberTyp.swift */; };
 		125E7A64233F1DCF0092E766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A63233F1DCF0092E766 /* AppDelegate.swift */; };
 		125E7A66233F1DCF0092E766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A65233F1DCF0092E766 /* ViewController.swift */; };
 		125E7A69233F1DCF0092E766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E7A67233F1DCF0092E766 /* Main.storyboard */; };
@@ -14,8 +18,6 @@
 		125E7A6E233F1DD00092E766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E7A6C233F1DD00092E766 /* LaunchScreen.storyboard */; };
 		125E7A79233F1DD00092E766 /* AccountNumberLuckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A78233F1DD00092E766 /* AccountNumberLuckyTests.swift */; };
 		125E7A84233F1DD00092E766 /* AccountNumberLuckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */; };
-		125E7A97233F223E0092E766 /* LuckyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */; };
-		12B768DA233F7A9C00D1C781 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		120BBD2C2340BFC3002C0206 /* LuckyTypeNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTypeNumberViewController.swift; sourceTree = "<group>"; };
+		120BBD2E2340C1AC002C0206 /* LuckyTypeNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTypeNumberTableViewCell.swift; sourceTree = "<group>"; };
+		120BBD2F2340C1AC002C0206 /* LuckyTypeNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LuckyTypeNumberTableViewCell.xib; sourceTree = "<group>"; };
+		120BBD322340C578002C0206 /* LuckNumberTyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckNumberTyp.swift; sourceTree = "<group>"; };
 		125E7A60233F1DCF0092E766 /* AccountNumberLucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountNumberLucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E7A63233F1DCF0092E766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		125E7A65233F1DCF0092E766 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +55,6 @@
 		125E7A7F233F1DD00092E766 /* AccountNumberLuckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountNumberLuckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E7A83233F1DD00092E766 /* AccountNumberLuckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumberLuckyUITests.swift; sourceTree = "<group>"; };
 		125E7A85233F1DD00092E766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCollectionViewCell.swift; sourceTree = "<group>"; };
-		12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		125E7A91233F1DDE0092E766 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				120BBD322340C578002C0206 /* LuckNumberTyp.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				125E7A65233F1DCF0092E766 /* ViewController.swift */,
+				120BBD2C2340BFC3002C0206 /* LuckyTypeNumberViewController.swift */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -165,8 +171,8 @@
 		125E7A95233F221C0092E766 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				125E7A96233F223E0092E766 /* LuckyCollectionViewCell.swift */,
-				12B768D9233F7A9C00D1C781 /* CollectionViewCell.swift */,
+				120BBD2E2340C1AC002C0206 /* LuckyTypeNumberTableViewCell.swift */,
+				120BBD2F2340C1AC002C0206 /* LuckyTypeNumberTableViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			files = (
 				125E7A6E233F1DD00092E766 /* LaunchScreen.storyboard in Resources */,
 				125E7A6B233F1DD00092E766 /* Assets.xcassets in Resources */,
+				120BBD312340C1AC002C0206 /* LuckyTypeNumberTableViewCell.xib in Resources */,
 				125E7A69233F1DCF0092E766 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,10 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120BBD2D2340BFC3002C0206 /* LuckyTypeNumberViewController.swift in Sources */,
 				125E7A66233F1DCF0092E766 /* ViewController.swift in Sources */,
 				125E7A64233F1DCF0092E766 /* AppDelegate.swift in Sources */,
-				12B768DA233F7A9C00D1C781 /* CollectionViewCell.swift in Sources */,
-				125E7A97233F223E0092E766 /* LuckyCollectionViewCell.swift in Sources */,
+				120BBD302340C1AC002C0206 /* LuckyTypeNumberTableViewCell.swift in Sources */,
+				120BBD332340C578002C0206 /* LuckNumberTyp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

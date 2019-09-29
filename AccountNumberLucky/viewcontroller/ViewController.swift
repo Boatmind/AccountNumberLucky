@@ -17,25 +17,13 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
+  
 
-
-}
-
-extension ViewController : UICollectionViewDataSource {
-  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 4
+  @IBAction func buttonPerform(_ sender: Any) {
+    performSegue(withIdentifier: "ViewConGoToLuckTypeViewCon", sender: nil)
   }
   
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
-    guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "LuckyCollectionViewCell", for: indexPath) as? LuckyCollectionViewCell else {
-        return UICollectionViewCell()
-    }
-    
-    return cell
-    
-  }
-  
-  
 }
+
+
 
