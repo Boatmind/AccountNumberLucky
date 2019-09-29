@@ -22,6 +22,8 @@
 		D088E6AC233F803900FA8A68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D088E6AB233F803900FA8A68 /* GoogleService-Info.plist */; };
 		D0AA6BC323408C55008A47DF /* LuckyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA6BC223408C55008A47DF /* LuckyNumber.swift */; };
 		D0AA6BC62340921F008A47DF /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA6BC52340921F008A47DF /* FirebaseManager.swift */; };
+		D0AA6BC82340A8F3008A47DF /* AccountNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA6BC72340A8F3008A47DF /* AccountNumber.swift */; };
+		D0AA6BCC2340CBBC008A47DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA6BCB2340CBBC008A47DF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		D088E6AB233F803900FA8A68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0AA6BC223408C55008A47DF /* LuckyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyNumber.swift; sourceTree = "<group>"; };
 		D0AA6BC52340921F008A47DF /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		D0AA6BC72340A8F3008A47DF /* AccountNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNumber.swift; sourceTree = "<group>"; };
+		D0AA6BCB2340CBBC008A47DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E88FAC0E7FBA54D37FEE9494 /* Pods-AccountNumberLuckyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountNumberLuckyTests.debug.xcconfig"; path = "Target Support Files/Pods-AccountNumberLuckyTests/Pods-AccountNumberLuckyTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				D0AA6BC223408C55008A47DF /* LuckyNumber.swift */,
+				D0AA6BC72340A8F3008A47DF /* AccountNumber.swift */,
+				D0AA6BCB2340CBBC008A47DF /* Constants.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -446,8 +452,10 @@
 				125E7A66233F1DCF0092E766 /* ViewController.swift in Sources */,
 				125E7A64233F1DCF0092E766 /* AppDelegate.swift in Sources */,
 				12B768DA233F7A9C00D1C781 /* CollectionViewCell.swift in Sources */,
+				D0AA6BC82340A8F3008A47DF /* AccountNumber.swift in Sources */,
 				125E7A97233F223E0092E766 /* LuckyCollectionViewCell.swift in Sources */,
 				D0AA6BC323408C55008A47DF /* LuckyNumber.swift in Sources */,
+				D0AA6BCC2340CBBC008A47DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
