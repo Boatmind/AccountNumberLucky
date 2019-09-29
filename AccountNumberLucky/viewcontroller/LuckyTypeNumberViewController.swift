@@ -26,9 +26,8 @@ class LuckyTypeNumberViewController: UIViewController {
          let luckNumber = LuckNumberType(image: "LuckyNumberOfWork", title: "Test\(value)", discription: "TestDes\(value)")
          luckNumberType.append(luckNumber)
       }
-      
     }
-    
+  
   }
   
   
@@ -42,10 +41,37 @@ extension LuckyTypeNumberViewController : UITableViewDataSource {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "LuckyTypeNumberTableViewCell", for: indexPath) as? LuckyTypeNumberTableViewCell else {
       return UITableViewCell()
     }
+    
     let lucknumbertype = luckNumberType[indexPath.row]
     cell.setUi(lucknumberTypeAtIndex: lucknumbertype)
+  
+   
+//  
+//    let shadowPath2 = UIBezierPath(rect: cell.bounds)
+//    cell.layer.masksToBounds = true
+//    cell.layer.shadowColor = UIColor.black.cgColor
+//    cell.layer.shadowOffset = CGSize(width: CGFloat(1.0), height: CGFloat(3.0))
+//    cell.layer.shadowOpacity = 1.0
+//    cell.layer.shadowPath = shadowPath2.cgPath
+    
+    
+    
     return cell
   }
   
   
 }
+
+extension LuckyTypeNumberViewController : UITableViewDelegate {
+//  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//     // ความสูงของ cell
+//  }
+
+  
+  func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 50.0
+  }
+
+}
+
+

@@ -16,10 +16,18 @@ class LuckyTypeNumberTableViewCell: UITableViewCell {
   
   @IBOutlet weak var descriptionLabel: UILabel!
   
+  @IBOutlet weak var viewCell: UIView!
+  
   func setUi(lucknumberTypeAtIndex : LuckNumberType) {
     
        luckyTypeImageView.image = UIImage(named: lucknumberTypeAtIndex.image)
        titleLabel.text = lucknumberTypeAtIndex.title
        descriptionLabel.text = lucknumberTypeAtIndex.discription
+    viewCell.layer.cornerRadius = 5.0
+    viewCell.layer.shadowColor = UIColor.gray.cgColor
+    viewCell.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+    viewCell.layer.shadowRadius = 5.0
+    viewCell.layer.shadowOpacity = 0.7
+    
   }
 }
