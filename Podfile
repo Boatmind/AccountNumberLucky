@@ -8,6 +8,8 @@ target 'AccountNumberLucky' do
   pod 'Firebase/Analytics'
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
   # Pods for AccountNumberLucky
 
