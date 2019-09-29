@@ -18,15 +18,12 @@ class LuckyTypeNumberViewController: UIViewController {
     let nib = UINib(nibName: "LuckyTypeNumberTableViewCell", bundle: bundle)
     tableview.register(nib, forCellReuseIdentifier: "LuckyTypeNumberTableViewCell")
     
-    for value in 0...1 {
-      if value == 0 {
-         let luckNumber = LuckNumberType(image: "LuckNumberOfLove", title: "Test\(value)", discription: "TestDes\(value)")
-         luckNumberType.append(luckNumber)
-      }else {
-         let luckNumber = LuckNumberType(image: "LuckyNumberOfWork", title: "Test\(value)", discription: "TestDes\(value)")
-         luckNumberType.append(luckNumber)
-      }
-    }
+    luckNumberType = [LuckNumberType(image: "LuckNumberOfLove",
+                                     title: "Test01",
+                                     discription: "TestDes01"),
+                      LuckNumberType(image: "LuckyNumberOfWork",
+                                     title: "Test02",
+                                     discription: "TestDes02")]
   
   }
   
@@ -44,18 +41,6 @@ extension LuckyTypeNumberViewController : UITableViewDataSource {
     
     let lucknumbertype = luckNumberType[indexPath.row]
     cell.setUi(lucknumberTypeAtIndex: lucknumbertype)
-  
-   
-//  
-//    let shadowPath2 = UIBezierPath(rect: cell.bounds)
-//    cell.layer.masksToBounds = true
-//    cell.layer.shadowColor = UIColor.black.cgColor
-//    cell.layer.shadowOffset = CGSize(width: CGFloat(1.0), height: CGFloat(3.0))
-//    cell.layer.shadowOpacity = 1.0
-//    cell.layer.shadowPath = shadowPath2.cgPath
-    
-    
-    
     return cell
   }
   
