@@ -14,39 +14,46 @@ class ViewController: UIViewController {
     private var firebase: FirebaseManager!
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         firebase = FirebaseManager()
+
+        createAccountNumber(accountNumber: AccountNumber(accountNumber: "111-111-111-2", accountType: "Saving", firstname: "Noey", lastname: "Jaa"))
+        
+        getAccountNumberDict()
+        
+        getAccountNumber(accountName: "000-000-000-1")
+        
+        
     }
     
-    func run() {
-        let account = AccountNumber(accountNumber: "test", accountType: "test", firstname: "test", lastname: "test")
-        // create accountNumber
-        firebase.createAccountNumber(account: account)
-        
-        // get accountNumber dict list
+    func createAccountNumber(accountNumber: AccountNumber) {
+        firebase.createAccountNumber(account: accountNumber)
+    }
+    
+    func getAccountNumberDict() {
         firebase.getAccountNumberDict() { [weak self] (data) in
             for item in data {
                 print("getAccountList() = \(item)")
             }
         }
-        
-        // get accountNumber by accountNumber
-        firebase.getAccountNumber(accNumber: "test") { [weak self] (data) in
+    }
+    
+    func getAccountNumber(accountName: String) {
+        firebase.getAccountNumber(accNumber: accountName) { [weak self] (data) in
             print("getAccount() = \(data)")
         }
-        
-        // update accountNumber by old acoountNumber
-        firebase.updateAccountNumber(fromAccountNumber: "test", toAccount:
-            AccountNumber(accountNumber: "000-000-000-1",
-                          accountType: "Saving",
-                          firstname: "Noey",
-                          lastname: "Eiei"))
-        
-        // delete account number by account number
-        firebase.deleteAccountNumber(accountNumber: "000-000-000-1")
     }
+    
+    func updateAccountNumber(fromAccountNumber: String, toAccount: AccountNumber) {
+        firebase.updateAccountNumber(fromAccountNumber: fromAccountNumber, toAccount: toAccount)
+    }
+    
+    func deleteAccountNumber(accountNumber: String) {
+        firebase.deleteAccountNumber(accountNumber: accountNumber)
+    }
+
 }
 
 extension ViewController : UICollectionViewDataSource {

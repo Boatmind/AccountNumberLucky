@@ -46,27 +46,29 @@ class FirebaseManager {
     func getAccountNumberDict(completion: @escaping ([AccountNumber]) -> Void) {
         self.ref.child(ACCOUNT_KEY).observe(DataEventType.value, with: { (snapshot) in
             // TODO: check response
-            let response = snapshot.value as? [String : AnyObject] ?? [:]
-            for data in response.values {
-                let account = AccountNumber(accountNumber: data["accountNumber"] as! String,
-                                            accountType: data["accountType"] as! String,
-                                            firstname: data["firstname"] as! String,
-                                            lastname: data["lastname"] as! String
-                )
-                self.list.append(account)
+            if let response = snapshot.value as? [String : AnyObject] {
+                for data in response.values {
+                    let account = AccountNumber(accountNumber: data["accountNumber"] as! String,
+                                                accountType: data["accountType"] as! String,
+                                                firstname: data["firstname"] as! String,
+                                                lastname: data["lastname"] as! String
+                    )
+                    self.list.append(account)
+                }
+                completion(self.list)
             }
-            completion(self.list)
         }) 
     }
     
     func getAccountNumber(accNumber: String, completion: @escaping (AccountNumber) -> Void) {
         self.ref.child(ACCOUNT_KEY).child(accNumber).observeSingleEvent(of: .value, with: { (snapshot) in
-            let response = snapshot.value as? NSDictionary
-            let account = AccountNumber(accountNumber: response?.value(forKey: "accountNumber") as! String,
-                                        accountType: response?.value(forKey: "accountType") as! String,
-                                        firstname: response?.value(forKey: "firstname") as! String,
-                                        lastname: response?.value(forKey: "lastname") as! String)
-            completion(account)
+            if let response = snapshot.value as? NSDictionary {
+                let account = AccountNumber(accountNumber: response.value(forKey: "accountNumber") as! String,
+                                            accountType: response.value(forKey: "accountType") as! String,
+                                            firstname: response.value(forKey: "firstname") as! String,
+                                            lastname: response.value(forKey: "lastname") as! String)
+                completion(account)
+            }
         }) { (error) in
 //            print(error.localizedDescription)
             print("\(Response.readError.rawValue): \(error).")
