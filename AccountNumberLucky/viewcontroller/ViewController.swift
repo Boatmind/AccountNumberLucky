@@ -14,18 +14,10 @@ class ViewController: UIViewController {
     private var firebase: FirebaseManager!
     
     @IBOutlet weak var collectionView: UICollectionView!
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         firebase = FirebaseManager()
-
-        createAccountNumber(accountNumber: AccountNumber(accountNumber: "111-111-111-2", accountType: "Saving", firstname: "Noey", lastname: "Jaa"))
-        
-        getAccountNumberDict()
-        
-        getAccountNumber(accountName: "000-000-000-1")
-        
-        
     }
     
     func createAccountNumber(accountNumber: AccountNumber) {
@@ -53,7 +45,7 @@ class ViewController: UIViewController {
     func deleteAccountNumber(accountNumber: String) {
         firebase.deleteAccountNumber(accountNumber: accountNumber)
     }
-
+    
 }
 
 extension ViewController : UICollectionViewDataSource {
